@@ -22,7 +22,7 @@ public class LeapYear {
             }
 
             System.out.println("would you like to try again?");
-            String input = sc.nextLine();
+            String input = sc.next();
             if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")) {
                 System.out.println("ok let's try again!");
             } else {
