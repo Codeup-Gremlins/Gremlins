@@ -10,4 +10,4 @@ function sevenBoom(arr) {
 //or not.
 
 
-console.log(sevenBoom(["1", "2", "3"]);
+console.log(sevenBoom(["1", "2", "3"]));
