@@ -8,4 +8,9 @@ public class Author extends Person {
         super(name);
         this.counter = counter;
     }
+
+
+
+
+
 }
