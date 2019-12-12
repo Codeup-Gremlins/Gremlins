@@ -7,14 +7,12 @@ public class PasswordStrength {
         checkPW();
     }
 
-
     static Scanner scan = new Scanner(System.in);
     public static int score;
     public static boolean wantsToContinue = true;
 
     public static void checkPW() {
         while (wantsToContinue) {
-
             score = 0;
             System.out.println("Please enter a password to check");
             System.out.println("Passwords should be at least 8 characters long");
@@ -34,30 +32,30 @@ public class PasswordStrength {
                 System.out.println("thats good, but a password with at least 12 characters would be more secure");
             }
 
-
-            //if it contains one digit, add 2 to total score
+            //use matches and regular expressions to search for character types
+            //if it contains digits
             if (inputPW.matches("(?=.*[0-9]).*")) {
                 score += 1;
             } else {
                 System.out.println("no numbers found");
             }
 
-            //if it contains one lower case letter, add 2 to total score
+            //if it contains lower case letters
             if (inputPW.matches("(?=.*[a-z]).*")) {
                 score += 1;
             } else {
                 System.out.println("no lowercase letters found");
             }
 
-            //if it contains one upper case letter, add 2 to total score
+            //if it contains upper case letters
             if (inputPW.matches("(?=.*[A-Z]).*")) {
                 score += 1;
             } else {
                 System.out.println("no uppercase letters found");
             }
 
-            //if it contains one special character, add 2 to total score
-            if (inputPW.matches("(?=.*[~!@#$%^&*()_-]).*")) {
+            //if it contains special characters
+            if (inputPW.matches("(?=.*[~!@#$%^&*()_><=+?.,/]).*")) {
                 score += 1;
             } else {
                 System.out.println("no special characters found");
@@ -66,7 +64,7 @@ public class PasswordStrength {
             System.out.println("password score = " + score + "/6");
 
             if (score < 4) {
-                System.out.println("that's really not a secure password");
+                System.out.println("that's not a very secure password");
             }
 
             if (score == 4) {
@@ -81,7 +79,7 @@ public class PasswordStrength {
                 System.out.println("that password is more secure than Fort Knox!");
             }
 
-            System.out.println("do you want to check another password? y/n");
+            System.out.println("do you want to check another password?\ny/n");
             String response = scan.nextLine();
             if (response.equalsIgnoreCase("y")) {
                 wantsToContinue = true;
