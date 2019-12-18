@@ -4,6 +4,8 @@ import java.util.Calendar;
 
 public class DateAndtime {
 
+//    fun playing with new java utilities
+
         public static void main(String[] args)
         {
             Calendar time = Calendar.getInstance();
