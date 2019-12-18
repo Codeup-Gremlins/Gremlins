@@ -2,7 +2,7 @@
 public class Challenge {
     public static void main(String[] args){
 
-        System.out.println(multiplyWithLoop(1, 5));
+        System.out.println(multiplyWithLoop(3, 7));
         System.out.println(fractoral(4));
 
     }
@@ -26,6 +26,7 @@ public class Challenge {
         }
         return output;
     }
+
 
 
 }
