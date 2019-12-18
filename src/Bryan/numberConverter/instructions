@@ -1,0 +1,17 @@
+attempted to complete the bonus exercises on the curriculum to convert a base 10 num to it's hexadecimal and binary equivalent
+
+through research it seemed there was a solution in parsing the valueOf a string and including the radix as a second parameter
+
+I would continually get exceptions and errors
+
+I tried changing the input data types,
+        changing the output data types,
+        changing the location of the methods,
+        and
+        tried casting to different data types all to no avail.
+
+I then found a very simple solution in converting the input int to a string with a specific radix that corresponded to
+the target base value.
+
+Using this built in functionality, we are now easily able to convert base 10 numbers into their equivalent target base numbers
+using a minimal amount of code.
